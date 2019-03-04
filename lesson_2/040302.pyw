@@ -30,8 +30,17 @@ btn11.grid(row = 2,column =3, padx = 3, pady=3)
 btn12=Button(root, text = "Button12")
 btn12.grid(row = 2,column =4, padx = 3, pady=3)
 
+btn13=Button(root, text = "Button13")
+btn13.grid(row = 3,column =1, padx = 3, pady=3)
+btn14=Button(root, text = "Button14")
+btn14.grid(row = 3,column =2, padx = 3, pady=3)
+btn15=Button(root, text = "Button15")
+btn15.grid(row = 3,column =3, padx = 3, pady=3)
+btn16=Button(root, text = "Button16")
+btn16.grid(row = 3,column =4, padx = 3, pady=3)
+
 ent1=Entry(root, width = 40)
-ent1.grid(row =3, column=  1, columnspan =4) #, sticky = S
+ent1.grid(row =4, column=  1, columnspan =4) #, sticky = S
 
 """btn2=Button(root, text = "Button2")
 btn2.grid(row = 3)
