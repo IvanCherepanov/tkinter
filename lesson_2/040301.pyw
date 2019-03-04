@@ -1,6 +1,6 @@
 from tkinter import*
 root=Tk()
-root.geometry("500x200")
+root.geometry("500x100")
 
 btn1=Button(root, text = "Button1")
 btn1.grid(row = 0)
