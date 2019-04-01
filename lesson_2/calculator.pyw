@@ -1,11 +1,11 @@
 from tkinter import*
 root=Tk()
-root.geometry("210x285")
+root.geometry("250x285")
 root.title("Калькулятор")
 root.resizable(0,0)#блочим разворот окна
 
-ent2 = Entry(root,width =17, font = "Times 15", justify = RIGHT) #height=2
-ent2.grid(row=1,column = 0, columnspan=13,padx = 3, pady=3, ipady=13, ipadx=11)
+ent2 = Entry(root,width =21, font = "Times 15", justify = RIGHT) #height=2
+ent2.grid(row=1,column = 0, columnspan=15,padx = 3, pady=3, ipady=13, ipadx=11)
 label1 = Label(root, text = "Калькулятор v1.0") #height=2
 label1.grid(row=0,column = 0, columnspan=13,padx = 3, pady=3)
 #ent1 = Entry(root)#, font = "Times 19"
@@ -26,6 +26,10 @@ btn4.grid(row = 3,column =3, padx = 5, pady=3)
 btn44=Button(root, text = "M-", font = "Times 9",width =3,
 height=1)
 btn44.grid(row = 3,column =4, padx = 5, pady=3)
+btn444=Button(root, text = "^", font = "Times 9",width =3,
+height=1)
+btn444.grid(row = 3,column =5, padx = 5, pady=3)
+
 
 btn5=Button(root, text = "←", font = "Times 9",width =3,
 height=1)
@@ -42,6 +46,9 @@ btn8.grid(row = 4,column =3, padx = 5, pady=3)
 btn9=Button(root, text = "sqrt", font = "Times 9",width =3,
 height=1)
 btn9.grid(row = 4,column =4, padx = 5, pady=3)
+btn99=Button(root, text = "(", font = "Times 9",width =3,
+height=1)
+btn99.grid(row = 4,column =5, padx = 5, pady=3)
 
 btn9=Button(root, text = "7", font = "Times 9",width =3,
 height=1)
@@ -58,6 +65,9 @@ btn12.grid(row = 5,column =3, padx = 5, pady=3)
 btn121=Button(root, text = "%", font = "Times 9",width =3,
 height=1)
 btn121.grid(row = 5,column =4, padx = 5, pady=3)
+btn122=Button(root, text = ")", font = "Times 9",width =3,
+height=1)
+btn122.grid(row = 5,column =5, padx = 5, pady=3)
 
 btn13=Button(root, text = "4", font = "Times 9",width =3,
 height=1)
@@ -74,6 +84,9 @@ btn16.grid(row = 6,column =3, padx = 5, pady=3)
 btn161=Button(root, text = "1/x", font = "Times 9",width =3,
 height=1)
 btn161.grid(row = 6,column =4, padx = 5, pady=3)
+btn162=Button(root, text = "n!", font = "Times 9",width =3,
+height=1)
+btn162.grid(row = 6,column =5, padx = 5, pady=3)
 
 btn21=Button(root, text = "1", font = "Times 9",width =3,
 height=1)
