@@ -2,7 +2,8 @@ from tkinter import*
 import math
 
 def number_button(num):
-    text1.insert(END, str(num), )
+    text1.insert(END, str(num))
+    #<input type="text" onkeyup="var yratext=/['0-9',':']/; if(yratext.test(this.value)) this.value=''">
 
 def clear():
     text1.delete(0,END)
