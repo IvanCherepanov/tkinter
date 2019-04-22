@@ -2,7 +2,7 @@ from tkinter import*
 from random import randint, choice
 
 def draw_1_circle_count_red(event):
-    for i in range(10):
+    for i in range(12):
         R = randint(10, 40)  # radius
         x = randint(R, 400 - R)
         y = randint(R, 400 - R)
