@@ -9,7 +9,7 @@ def draw_1_circle_count_red(event):
         y = randint(R, 400 - R)
         color = choice(colors)
         canv.create_oval(x-R, y-R, x+R, y+R, fill=color)
-        if color == "red":
+        if color == "red" or color =="green":
             count +=1
     print(count,"circle(s)")
         
