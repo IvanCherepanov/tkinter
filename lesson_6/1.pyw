@@ -2,12 +2,17 @@ from tkinter import*
 from random import randint, choice
 
 def draw_1_circle_count_red(event):
-    for i in range(12):
+    count = 0
+    for i in range(20):
         R = randint(10, 40)  # radius
         x = randint(R, 400 - R)
         y = randint(R, 400 - R)
         color = choice(colors)
         canv.create_oval(x-R, y-R, x+R, y+R, fill=color)
+        if color == "red":
+            count +=1
+    print(count,"circle(s)")
+        
     
 root = Tk()
 #root.geometry("800x600")
