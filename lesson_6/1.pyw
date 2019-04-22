@@ -1,13 +1,29 @@
 from tkinter import*
+from random import randint, choice
+
+def draw_1_circle_count_red(event):
+    for i in range(1):
+        R = randint(10, 40)  # radius
+        x = randint(R, 400 - R)
+        y = randint(R, 400 - R)
+        color = choice(colors)
+        canv.create_oval(x-R, y-R, x+R, y+R, fill=color)
+    
 root = Tk()
+#root.geometry("800x600")
+fr = Frame(root)
+btn1=Button(fr, text='Draw and Count')
+btn1.pack(side=LEFT)
+btn1.bind('<1>', draw_1_circle_count_red)
+
+fr.pack()
+
+colors=['green', 'blue', 'red', '#BB99ff', '#FF00CC']
+
+
 canv = Canvas(root, width=200, height=100)
 canv.pack()
-canv.create_oval(30,30,90,90, fill='green')
-
-
-
-
-
-
+#canv.create_oval(30,30,90,90, fill='green')
+#btn1.bind("<Button-1>", draw_1_circle_count_red)
 
 root.mainloop()
